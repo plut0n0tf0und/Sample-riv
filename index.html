@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rive Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+ 
+  </style>
+</head>
+<body>
+  <canvas id="rive-canvas" width="800" height="750"></canvas>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.0.0"></script>
+  <script>
+    new rive.Rive({
+      src: "Truck.riv",
+      canvas: document.getElementById("rive-canvas"),
+      autoplay: true,
+    stateMachines: ["State Machine 1"],
+
+    });
+  </script>
+</body>
+</html>
